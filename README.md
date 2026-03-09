@@ -1,11 +1,11 @@
-# aNAP and phytoplankton pigment retrieval from hyperspectral absorption
+# aNAP and phytoplankton pigment retrieval from AC-S cp(660) and hyperspectral particulae absorption
 
 MATLAB workflow for estimating **non-algal particle absorption spectra (aNAP)** from cp(660), deriving **phytoplankton absorption spectra (aPH)**, performing **Gaussian decomposition**, and retrieving **phytoplankton pigment concentrations**.
 
 The repository provides two main workflows:
 
-1. **Standalone aNAP estimation**
-2. **Full phytoplankton pigment retrieval workflow**
+1. **Standalone aNAP estimation from cp(660)**
+2. **Full phytoplankton pigment retrieval workflow from cp(660) and by also having ap as input**
 
 ---
 
@@ -47,7 +47,7 @@ example_data/
     Example datasets
 
 docs/
-    Additional documentation
+    Flowchart of the algorithm
 ```
 
 ---
@@ -57,7 +57,7 @@ docs/
 Clone the repository:
 
 ```
-git clone https://github.com/USERNAME/anap-pigment-retrieval.git
+git clone https://github.com/margherolla/anap-pigment-retrieval.git
 ```
 
 Add functions to the MATLAB path:
@@ -106,8 +106,8 @@ Required inputs:
 - wavelength vector (`lambda`)
 - cp(660)
 - cp(660) uncertainty (optional)
-- particulate absorption spectra `aP(λ)`
-- uncertainty on `aP(λ)`
+- particulate absorption spectra `ap(λ)`
+- uncertainty on `ap(λ)`
 
 Outputs:
 
@@ -146,7 +146,7 @@ Outputs:
 
 ## derive_pigm_gaus
 
-Derives pigment concentrations from Gaussian peak amplitudes using regression coefficients.
+Derives pigment concentrations from Gaussian peak amplitudes using regression coefficients stored in table_pigments_coeff.csv
 
 ---
 
@@ -166,7 +166,7 @@ The repository includes small example datasets:
 If you use this code please cite:
 
 Costanzo et al. (2026)  
-*A novel approach for estimating non-algal particle absorption from AC-S and retrieving phytoplankton pigments.*
+*A novel approach to estimate non-algal particle absorption for improved retrieval of pigment concentrations in coastal waters.*
 
 ---
 

@@ -1,7 +1,5 @@
 # MATLAB temporary files
 *.asv
-
-# MATLAB autosave
 *.m~
 
 # MATLAB figures
@@ -10,6 +8,9 @@
 # temporary files
 *.tmp
 *.log
+
+# MATLAB autosave folders
+slprj/
 
 # OS files
 .DS_Store
