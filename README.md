@@ -170,6 +170,6 @@ Costanzo et al. (2026)
 
 ---
 
-# Author
+# Main Author
 
 Margherita Costanzo
