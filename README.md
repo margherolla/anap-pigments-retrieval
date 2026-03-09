@@ -1,4 +1,4 @@
-# aNAP and phytoplankton pigment retrieval from AC-S cp(660) and hyperspectral particulae absorption
+# aNAP and phytoplankton pigment retrieval from AC-S cp(660) and ap
 
 MATLAB workflow for estimating **non-algal particle absorption spectra (aNAP)** from cp(660), deriving **phytoplankton absorption spectra (aPH)**, performing **Gaussian decomposition**, and retrieving **phytoplankton pigment concentrations**.
 
@@ -23,7 +23,7 @@ Gaussian decomposition of aPH(λ)
 ↓  
 Pigment concentration estimation  
 
-If particulate absorption spectra are not available, the workflow can also be used only to estimate:
+If ap is not available, the workflow can also be used only to estimate:
 
 cp(660) → aNAP(λ)
 
